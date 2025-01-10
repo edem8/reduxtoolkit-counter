@@ -1,7 +1,7 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { useAppDispatch, useAppSelector } from "./redux-hooks";
+import { useAppDispatch, useAppSelector } from "./app/redux-hooks";
 import { increment } from "./Reducers/counterReducer";
 
 function App() {
@@ -36,9 +36,11 @@ function App() {
         </p> */}
       </div>
       <p className="read-the-docs">
-        Click on the button to see Redux state management effect
+        Click on the button to update state using Redux
       </p>
-      <p className="read-the-docs">Currently using a payload of +5</p>
+      <p className="read-the-docs">
+        Currently dispatching an increment action with payload of +5
+      </p>
     </>
   );
 }
